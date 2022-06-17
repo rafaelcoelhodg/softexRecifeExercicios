@@ -1,0 +1,14 @@
+Softex - Lógica de Programação e Orientação a Objetos
+
+Exercício Desenvolvimento
+
+Na matéria de Física Arstóteles ficou em 1º lugar, já que em Matemática e Química ele ficou 
+em alguma posição abaixo do primeiro, em 2º lugar Platão por ter acertado mais que Sócrates,
+que ficou em 3º lugar, fechando a matéria de Física.
+
+Em Matemática Sócrates ficou em 1º lugar, já que Platão acertou mais que Aristóteles, ficando
+em 2º e 3º lugares respectivamente e cosiderando que Aristóteles já é 1º lugar em Física.
+
+Por fim em Química Platão fica em 1º lugar, já que Aristóteles e Sócrates ficaram em 1º
+nas matérias de Física e Matemática respectivamente, em 2º lugar Aristóteles e 3º Sócrates,
+porém não há critérios para que as duas últimas posições sejam definidas nesta ordem.
