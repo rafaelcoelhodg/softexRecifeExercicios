@@ -1,0 +1,38 @@
+Softex - Lógica de Programação e Orientação a Objetos
+
+Exercício Desenvolvimento 2
+
+O professor ao fazer a divisão dos alunos conforme o layout 1 (lê-se a fila em coluna, isto é, 
+de cima para baixo), distribuição ficou da seguinte forma:
+
+Fila 1: 2P e 3M
+Fila 2: 3P e 2M
+Fila 3: 4M e 1P
+Fila 4: 3P e 2M
+Fila 5: 3M e 2P
+
+Layout 2:
+
+Fila 1: 2P e 4M
+Fila 2: 4P e 2M
+Fila 3: 4M e 2P
+Fila 4: 4P e 2M
+Fila 5: 4M e 2P
+Fila 6: 3P e 3M
+
+Layout 3:
+
+Fila 1: 2P e 4M
+Fila 2: 4P e 2M
+Fila 3: 4M e 2P
+Fila 4: 4P e 2M
+Fila 5: 3M e 3P
+Fila 6: 4P e 2M
+
+Através das organizações dos alunos por fila foi possível indentificar que no layout 3 em
+comparação com o layout 2 houve a troca de alunos das filas 5 e 6, onde no layout 2 a fila 5 
+era 4M e 2P e na fila 6 era 3P e 3M. Já no layout 3 a fila 5 está com 3M e 3P e na fila 6
+com 4P e 2M. 
+
+Em resumo 1 aluno de matemática da fila 5, passou para portugês e 1 aluno de 
+portugês da fila 6, passou para matemática.
