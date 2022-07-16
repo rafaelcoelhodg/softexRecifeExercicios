@@ -1,0 +1,145 @@
+Softex - Lógica de Programação e Orientação a Objetos
+
+Exercício Desenvolvimento 5
+
+Var
+
+  terrestre, aereo, aquatico, opcao : caractere
+
+  s <- sim
+  n <- não
+
+Início
+  
+  Escreva("Escolha um dos meios de transporte: ")
+  Escreva("1 - Terrestre")
+  Escreva("2 - Aéreo")
+  Escreva("3 - Aquático")
+
+  Escolha opcao
+    caso 1
+      Escreva("Cabe apenas 1 pessoa? Digite "s" para sim e "n" para não")
+    Se(s = sim) então
+      Escreva("É pesado? Digite "s" para sim e "n" para não")
+        Se(s = sim) então
+          Escreva ("O transporte escolhido foi o trator")
+   Senão
+     Escreva("Tem pedal? Digite "s" para sim e "n" para não")
+    Se (s = sim) então
+      Escreva("O transporte escolhido foi a bicicleta")
+    Fim_se
+  Fim_se
+Fim_se
+
+   Senão
+    Escreva("Usa capacete? Digite "s" para sim e "n" para não")
+   Se(s = sim) então
+     Escreva("O transporte escolhido foi a moto")
+Fim_se
+
+   Senão
+    Escreva("Tem passageiro? Digite "s" para sim e "n" para não")
+   Se(s = sim) então
+     Escreva("Usa trilho? Digite "s" para sim e "n" para não")
+       Se(s = sim) então
+         Escreva("O transporte escolhido foi o trem")
+  Fim_se
+Fim_se
+
+   Senão
+     Escreva("Anda na pista? Digite "s" para sim e "n" para não")
+   Se(s = sim) então
+     Escreva("É alto?")
+       Se(s = sim) então
+         Escreva("Usa carroceria? Digite "s" para sim e "n" para não")
+           Se(s = sim) então
+	     Escreva("O transporte escolhido foi o caminhão")
+
+      Fim_se
+   Fim_se
+Fim_se
+
+   Senão
+     Escreva("Pode ter cobrador? Digite "s" para sim e "n" para não")
+        Se(s = sim) então
+          Escreva("O transporte escolhido foi o ônibus")
+
+Fim_se
+
+   Senão
+     Escreva("Anda na pista? Digite "s" para sim e "n" para não")
+        Se(s = sim) então
+          Escreva("É veículo leve? Digite "s" para sim e "n" para não")
+            Se(s = sim) então
+              Escreva("O transporte escolhido foi o carro")
+
+  Fim_se
+Fim_se
+
+   caso 2
+      Escreva("Precisa pular? Digite "s" para sim e "n" para não")
+        Se(s = sim) então
+          Escreva ("O transporte escolhido foi a asa delta")
+Fim_se
+
+   Senão
+     Escreva("Viaja dentro? Digite "s" para sim e "n" para não")
+       Se(s = sim) então
+         Escreva("É devagar? Digite "s" para sim e "n" para não")
+           Se(s = sim) então
+             Escreva("O transporte escolhido foi o balão")
+
+    Fim_se
+  Fim_se
+
+   Senão
+     Escreva("Tem piloto? Digite "s" para sim e "n" para não")
+        Se(s = sim) então
+          Escreva("Possui asas fixas? Digite "s" para sim e "n" para não)
+            Se(s = sim) então
+              Escreva("O transporte escolhido foi o avião")
+
+  Fim_se
+Fim_se
+
+   Senão
+     Escreva("Faz voo vertical?")
+       Se(s = sim) então
+         Escreva("O transporte escolhido foi o helicóptero")
+
+  Fim_se
+Fim_se
+
+   caso 3
+      Escreva("É coberto de água?")
+        Se(s = sim) então
+          Escreva ("O transporte escolhido foi o submarino")
+
+Fim_se
+
+   Senão
+     Escreva("Navega na água?")
+       Se(s = sim) então
+         Escreva("Possui vela?")
+	    Se(s = sim) então
+              Escreva ("O transporte escolhido foi o barco")
+
+  Fim_se
+Fim_se
+
+   Senão
+     Escreva("Tem motor?")
+       Se(s = sim) então
+	 Escreva("É alto?")
+	    Se(s = sim) então
+              Escreva ("O transporte escolhido foi o navio")
+
+  Fim_se
+Fim_se
+
+   Senão
+     Escreva("Pode ser descoberto?")
+       Se(s = sim) então
+         Escreva ("O transporte escolhido foi a lancha")
+
+Fim
