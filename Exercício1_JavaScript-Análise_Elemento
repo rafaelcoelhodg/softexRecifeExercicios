@@ -1,0 +1,32 @@
+Site 1: https://assine.uol.com.br
+Elemento 1:
+Botão "assine já" no topo do site, ao clicar direciona para outra página através do código: 
+
+<a class="assine-ja scrollTo" href="#plano">Assine já</a>
+
+Elemento 2:
+Lista do item "benefícios" no topo do site, ao clicar direciona ao conteúdo linkado que está na mesma página, apenas subindo a página automaticamente
+através do código: 
+
+<li><a href="#beneficios" class="scrollTo">Benefícios</a></li>
+
+Site 2: https://ge.globo.com/
+Elemento 1:
+Na imagem do escudo (ao lado da palavra "times") no topo do site, ao passar o mouse por cima, cria uma janela dinâmica que mostra vários escudos e nomes dos
+respectivos times de futebol, através do código abaixo:
+
+<div id="mosaico__wrapper" class="mosaico__wrapper" style="display: inline-block;"> 
+<div class="icons-escudo-header" style="display: block;"> 
+<span class="mosaico__header-personalization--times-label" style="display: block;">TIMES</span> 
+</div> <div class="mosaico__header-personalization--seta"></div>  
+</div>
+
+Elemento 2:
+No menu do topo do site, ao clicar aparece uma aba lateral com mais conteúdo através do código abaixo:
+<div class="menu-area">
+      <div class="menu-button">
+        <div class="burger"></div>
+        <span class="menu-label">MENU</span>
+      </div>
+      <span class="menu-divisor menu-divisor-before-logo"></span>
+    </div>
