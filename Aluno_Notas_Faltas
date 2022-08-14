@@ -1,0 +1,37 @@
+Softex - Lógica de Programação e Orientação a Objetos
+
+Exercício Desenvolvimento (Aluno, Notas e Faltas)
+
+Var
+nome 				: vetor [1..50] de caractere
+nota1, nota2, media, soma 	: real
+faltas 				: inteiro
+
+Início
+
+escreval("Digite o nome do aluno:" )
+leia(nome)
+
+escreval("Informe a nota 1:" )
+leia(nota1)
+
+escreval("Informe a nota 2:" )
+leia(nota2)
+
+escreval("Digite o numero de faltas do aluno:")
+leia(faltas)
+
+soma <- nota1 + nota2
+media <- soma / 2
+
+Se (media < 7) então
+  escreval("O aluno", nome, "está reprovado por media")
+Senão
+  escreval ("O aluno", nome, "está aprovado por media")
+ Fim_se
+Se (faltas > 3) então
+  esreval("O aluno", nome, "está reprovado por ter mais de 3 faltas")
+Senão
+  escreval("O aluno", nome, "está aprovado por ter menos de 3 faltas")
+ Fim_se
+Fim
