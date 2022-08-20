@@ -1,0 +1,101 @@
+Softex - Lógica de Programação e Orientação a Objetos
+
+Exercício Desenvolvimento 6 - Prova de Vestibular
+
+Var
+
+  nome, turma, maiorNotaAluno						: Vetor [1..50] de caractere
+  nota, maiorNota, maiorNotaA, maiorNotaB, maiorNotaC, maiorNotaD	: real
+  alunos, aprovados, turmaA, turmaB, turmaC, turmaD			: inteiro
+
+Início
+
+  maiorNotaAluno <- ""
+  maiorNota <- 0
+  maiorNotaA <- 0
+  maiorNotaB <- 0
+  maiorNotaD <- 0
+  alunos <- 0
+  aprovados <- 0
+  turmaA <- 0
+  turmaB <- 0
+  turmaC <- 0
+  turmaD <- 0
+
+    Enquanto (alunos <= 100) faça
+
+      escreval("Informe o nome do aluno: ")
+      leia(nome)
+
+      escreval("Informe se o aluno é da turma A, B, C ou D: ")
+      leia(turma)
+
+      escreval(Informe a nota do aluno: ")
+      leia(nota)
+
+    Se (nota >= 7) então
+      aprovados <- aprovados + 1
+
+    Se (nota > maiorNota) então
+      maiorNota <- nota
+      maiorNotaAluno <- nome
+   Fim_se
+  Fim_se
+
+    Se (turma == "A") então
+      turmaA <- turmaA + 1
+
+    Senão
+
+    Se (turma == "B") então
+      turmaA <- turmaB + 1
+
+    Senão
+
+    Se (turma == "C") então
+      turmaA <- turmaC + 1
+
+    Senão
+
+    Se (turma == "D") então
+      turmaA <- turmaD + 1
+
+    Fim_se
+   Fim_se
+  Fim_se
+ Fim_se
+
+    Se (nota > maiorNotaA) então
+      maiorNotaA <- nota
+
+    Senão
+
+    Se (nota > maiorNotaB) então
+      maiorNotaB <- nota
+
+    Senão
+
+    Se (nota > maiorNotaC) então
+      maiorNotaC <- nota
+
+    Senão
+
+    Se (nota > maiorNotaD) então
+      maiorNotaD <- nota
+
+    Fim_se
+   Fim_se
+  Fim_se
+ Fim_se
+
+    alunos <- alunos + 1
+
+Fim_enquanto
+
+  escreval("Foram aprovados", aprovados, "alunos")
+  esreval("Destes", turmaA, "aprovados são da turma A", turmaB, "da turma B", turmaC, "da turma C e", turmaD, "da turma D")
+  escreval("A maior nota da turma A foi", maiorNotaA, "da turma B foi", maiorNotaB, "da turma C foi", maiorNotaC, "da turma D foi", maiorNotaD)
+  escreval("O aluno que teve a maior nota de todos foi: ", maiorNotaAluno)
+
+Fim
+
