@@ -1,0 +1,65 @@
+
+Softex - Lógica de Programação e Orientação a Objetos
+
+Módulo 2 Exercício 2 - Categoria de Habilitação
+
+Exercício realizado no Python:
+
+nRodas = int(input("Informe o numero de rodas do veiculo: "))
+peso = int(input("Informe o peso do veículo: "))
+nPessoas = int(input("Informe a capacidade de pessoas no veiculo: "))
+
+if nRodas == 2 or nRodas == 3:
+    print("Categoria de habilitação A é a mais recomendada")
+elif nRodas == 4 and nPessoas <= 8 and peso <= 3500:
+    print("Categoria de habilitação B é a mais recomendada") 
+elif nRodas >= 4 and peso > 3500 and peso <= 6000:
+    print("Categoria de habilitação C é a mais recomendada") 
+elif nRodas >= 4 and nPessoas > 8:
+    print("Categoria de habilitação D é a mais recomendada")
+elif nRodas >= 4 and peso > 6000:
+    print("Categoria de habilitação E é a mais recomendada") 
+else:
+    print("Categoria não encontrado")
+    
+
+Exercício em Portugol
+
+Var
+
+  nRodas, nPessoas, peso: inteiro
+
+Início
+
+  escreval("Informe o numero de rodas do veiculo: ")
+  leia(nRodas)
+  
+  escreval("Informe o peso do veículo: ")
+  leia(peso)
+
+  escreval("Informe a capacidade de pessoas no veiculo: ")
+  leia(nPessoas)
+
+  Se (nRodas = 2) OU (nRoda = 3) então
+    esceva("Categoria de habilitação A é a mais recomendada")
+
+  Senão se (nRodas = 4) E (nPessoas <= 8) E (peso <= 3500) então
+    escreva("Categoria de habilitação B é a mais recomendada")
+  
+  Senão se (nRodas >= 4) E (peso >= 3500) OU (peso <= 6000) então
+    escreva("Categoria de habilitação C é a mais recomendada")
+
+  Senão se (nRodas >= 4) E (nPesoas > 8) então
+    escreva("Categoria de habilitação D é a mais recomendada")
+
+  Senão se (nRodas >= 4) E (peso > 6000) então
+    escreva("Categoria de habilitação E é a mais recomendada")
+
+    Fim_se
+   Fim_se
+  Fim_se
+ Fim_se
+Fim_se
+
+Fim
+
