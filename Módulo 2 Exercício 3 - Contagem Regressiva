@@ -1,0 +1,16 @@
+Softex - Lógica de Programação e Orientação a Objetos
+
+Módulo 2 Exercício 3 - Contagem Regressiva
+
+Faça um código que execute a contagem regressiva de uma bomba, informando o número de segundos para explodir. 
+Ele deverá mostrar a mensagem “iniciando contagem regressiva”, os segundos passados e, no final, a mensagem “BUM!”.
+
+Exercício realizado no Python:
+
+import time
+print('Iniciando contagem regressiva')
+for i in range(5,-1,-1):
+    print(i, 'segundo(s) restante(s)')
+    time.sleep(0)
+    if i == 0:
+        print('Bum!')
