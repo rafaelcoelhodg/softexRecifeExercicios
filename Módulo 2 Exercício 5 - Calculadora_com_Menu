@@ -1,0 +1,32 @@
+#Exercício realizado em Python
+
+def menuPrincipal ():
+    print('Escolha uma das opções abaixo:\n 1: Soma \n 2: Subtração \n 3: Multiplicação \n 4: Divisão\n 0: Sair\n')
+    
+def calculadora (num1, num2, operador):
+    if (operador == 1):
+        operacao = num1 + num2
+        return operacao
+    elif (operador == 2):
+        operacao = num1 - num2
+        return operacao
+    elif (operador == 3):
+        operacao = num1 * num2
+        return operacao
+    elif (operador == 4):
+        operacao = num1 / num2
+        return operacao
+    
+while True:
+    menuPrincipal ()
+    operador = int(input('Qual a opção desejada?\n '))
+    if operador == 0:
+        print('Encerrando o programa')
+        break
+    elif (operador < 0 or operador > 4):
+        print('Essa opção não existe\n\n')
+    elif (operador == 1 or operador <= 4):
+        num1 = float(input('Digite o primeiro número:\n\n '))
+        num2 = float(input('Digite o segundo número:\n\n '))
+        resultado = calculadora (num1, num2, operador)
+        print(f'O resultado é:  {resultado}')
