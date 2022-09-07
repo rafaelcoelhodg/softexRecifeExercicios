@@ -1,0 +1,25 @@
+# Atividade realizada em Python
+
+def calculadora (num1, num2, operador):
+    if (operador == 1):
+        operacao = num1 + num2
+        return operacao
+    elif (operador == 2):
+        operacao = num1 - num2
+        return operacao
+    elif (operador == 3):
+        operacao = num1 * num2
+        return operacao
+    elif (operador == 4):
+        operacao = num1 / num2
+        return operacao
+    else:
+        operacao = 0
+        return operacao
+    
+operador = int(input('Escolha a operação desejada: \n 1. Soma \n 2. Subtração \n 3. Multiplicação \n 4. Divisão\n'))
+num1 = float(input('Digite o primeiro número: '))
+num2 = float(input('Digite o segundo número: '))
+    
+resultado = calculadora (num1, num2, operador)
+print('O resultado é: ', resultado)
