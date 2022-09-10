@@ -1,0 +1,15 @@
+#Atividade realizada em Python
+
+ano = True
+while(ano):
+    try:
+        print('Digite seu nome completo:')
+        nome = input()
+        print('Digite seu ano de nascimento:')
+        anoNasc = int(input())
+        if anoNasc >= 1922 and anoNasc <= 2022:
+            idade = 2022 - anoNasc
+            print('Você completou ',idade, 'anos em 2022')
+            ano = False
+    except:
+        print('Ano não preenchido corretamente')
