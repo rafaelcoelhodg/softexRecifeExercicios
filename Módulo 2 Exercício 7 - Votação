@@ -1,0 +1,47 @@
+#Atividade realizada em Python
+
+from enum import IntEnum
+
+candidato_X = 0
+candidato_Y = 0
+candidato_Z = 0
+branco = 0
+encerrar = 'não'
+
+class Eleicao(IntEnum):
+    candidato_X = 889
+    candidato_Y = 847
+    candidato_Z = 515
+    branco = 0
+
+while (encerrar == 'não'):
+    try:
+        voto = Eleicao(int(input('"Escolha seu candidato:\n candidato_X nº 889\n candidato_Y nº 847\n candidato_Z nº 515\n"')))
+        if voto.candidato_X.value == 889 :
+            candidato_X += 1 
+        elif voto.candidato_Y.value == 847 :
+            candidato_Y += 1
+        elif voto.candidato_Z.value == 515 :
+            candidato_Z += 1
+        elif voto.branco.value == 0 :
+            branco += 1                     
+    except:
+        branco =+ 1
+        print("Candidato inválido")
+    encerrar = input("Encerrar votação? Sim ou Não: ")
+    if encerrar == 's' or encerrar == 'S' or encerrar == 'sim' or encerrar == 'Sim' :
+        encerrar = 'sim'
+    else:
+        encerrar = 'não'
+    print("")
+if(candidato_X > candidato_Y and candidato_X > candidato_Z):
+    print("O Vencedor é o Candidato X")
+elif(candidato_Y > candidato_X and candidato_Y > candidato_Z):
+    print("O Vencedor é o Candidato Y")
+else:
+    print("O Vencedor é o Candidato Z")
+
+print("Candidato X: ",candidato_X, "votos")
+print("Candidato Y: ",candidato_Y, "votos")
+print("Candidato Z: ",candidato_Z, "votos")
+print("Brancos e nulos: ",branco)
