@@ -1,0 +1,40 @@
+#Atividade Realizada em Python
+
+Crie um tipo abstrato de dado (TAD) para manipular números complexos na linguagem Python.
+O método deve:
+
+- calcular três números complexos;
+- realizar todas as operações básicas;
+- e imprimir as propriedades real e img do números.
+
+class numComplexo:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
+        result_Complexo = 0
+
+    def soma_Complexto(self, a, b, c ):
+        result_Complexo = (a + b + c)
+        return result_Complexo
+
+    def subtra_Complexo(self, a, b, c):
+        result_Complexo = ((a - b) - c)
+        return  result_Complexo
+
+    def multipl_Complexo(self, a, b, c):
+        result_Complexo = ((a * b) * c)
+        return result_Complexo
+
+    def divi_Complexo(self, a, b, c ):
+        result_Complexo = (((a / b) / c))
+        return result_Complexo
+
+
+a = numComplexo(6,3)
+b = numComplexo(4,8)
+c = numComplexo(5,9)
+
+print(f'Resultado = {result_Complexo}')
+print(f'Resultado real = {result_Complexo.real}')
+print(f'Resultado imaginario = {result_Complexo.imag}')
