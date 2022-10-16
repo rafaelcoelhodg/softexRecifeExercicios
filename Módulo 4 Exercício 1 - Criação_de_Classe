@@ -1,0 +1,23 @@
+#Atividade realizada em Python
+#Crie uma classe de sua preferência com, no mínimo, uma variável, um método e um incremento. Depois, desenvolva três ou mais objetos para testar o código.
+
+class Conta:
+    def __init__(self, numero, titular, saldo, limite):
+        print("Inicializando uma conta")
+        self.numero = numero
+        self.titular = titular
+        self.saldo = saldo
+        self.limite = limite
+    
+    def deposita(self, valor):
+        self.saldo += valor
+    
+    def saca(self, valor):
+        if (self.saldo < valor):
+            return False
+        else:
+            self.saldo -= valor
+            return True
+        
+    def extrato(self):
+        print("numero: {} \nsaldo: {}".format(self.numero, self.saldo))
