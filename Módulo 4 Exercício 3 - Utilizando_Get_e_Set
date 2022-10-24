@@ -1,0 +1,19 @@
+#Atividade realizada em Python
+
+Crie uma classe e insira nela, no mínimo, dois atributos, os quais devem ter um método acessor (get) e um método modificador (set) para cada. 
+Defina um objeto para cada atributo e elabore um construtor para criar alguma regra.
+
+A atividade pode ser realizada em qualquer linguagem de programação ou apenas utilizando algoritmos.
+
+class celular:
+    def get_cor(self):
+        return self.cor
+    
+    def set_cor(self, nova_cor):
+        self.cor = nova_cor
+        
+    def get_tamanho(self):
+        return self.tamanho
+    
+    def set_tamanho(self, novo_tamanho):
+        self.tamanho = novo_tamanho
