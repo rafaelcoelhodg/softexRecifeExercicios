@@ -1,0 +1,17 @@
+#Atividade realizada em Java
+
+//Crie um exemplo de como funcionam a serialização e a desserialização de um sistema qualquer. 
+//Utilize as classes, os objetos e métodos padrões da Java e insira um endereço físico fictício.
+
+//Serialização de objetos
+FileOutPutSTream teste = new FileOutPutSTream(endereco);
+ObjectosOutPutStream obj = new ObjectosOutPutStream(teste);
+            obj.writeObject(objetosserializable);
+                    obj.close();
+
+//Desserialização de objetos
+FileInputStream teste = new FileInputStream(endereco);
+ObjectInputStream objetos = new ObjectInputStream(teste);
+        ObjetoSerializavel obj.readObject();
+                Obj.close();
+                return serializado;
