@@ -1,0 +1,17 @@
+#Atividade realizada em Python
+
+#Manipulação de String
+
+#Tamanho da String - len()
+str = "Exemplo de manipulação de string que retorna um número inteiro com a quantidade de caracteres contidas na string"
+print (len(str))
+
+#String Em Minúsculas – lower()
+str = "Exemplo De Manipulação De String Que Retorna A String Convertida Para Letras Minúsculas"
+print(str)
+print(str.lower())
+
+#String Em Maiúsculas – upper()
+str = "exemplo de manipulação de string que retorna a string convertida para letras maiúsculas"
+print(str)
+print(str.upper())
